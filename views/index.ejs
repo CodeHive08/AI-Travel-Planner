@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Travel Planner</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>AI Travel Planner</h1>
+            <p>Plan your perfect trip with AI assistance</p>
+        </div>
+
+        <div class="content">
+            <div class="form-section">
+                <form id="travelForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="budget"><i class="fas fa-rupee-sign"></i> Budget (INR)</label>
+                            <input type="number" id="budget" name="budget" placeholder="Enter your budget" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="days"><i class="fas fa-calendar"></i> Number of Days</label>
+                            <input type="number" id="days" name="days" placeholder="Enter number of days" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="location"><i class="fas fa-map-marker-alt"></i> Destination</label>
+                            <input type="text" id="location" name="location" placeholder="Enter destination" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn" id="generateBtn">
+                        <i class="fas fa-magic"></i> Generate Travel Plan
+                    </button>
+                </form>
+            </div>
+
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Generating your perfect travel plan...</p>
+            </div>
+
+            <div class="result-section" id="resultSection">
+                <div class="result-header">
+                    <h2 id="resultTitle"></h2>
+                </div>
+                
+                <div class="trip-info">
+                    <div class="info-card">
+                        <i class="fas fa-rupee-sign"></i>
+                        <h3>Budget</h3>
+                        <p id="resultBudget"></p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-calendar"></i>
+                        <h3>Duration</h3>
+                        <p id="resultDays"></p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Destination</h3>
+                        <p id="resultLocation"></p>
+                    </div>
+                </div>
+
+                <img id="destinationImage" class="destination-image" style="display: none;">
+                
+                <div class="travel-plan" id="travelPlan"></div>
+                
+                <button class="btn btn-secondary" onclick="resetForm()">
+                    <i class="fas fa-plus"></i> Plan Another Trip
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
