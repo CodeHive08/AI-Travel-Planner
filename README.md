@@ -3,6 +3,12 @@
 A modern AI-powered travel planning application built with Node.js, Express, and EJS. This application helps users create detailed travel plans based on their budget, duration, and destination using AI assistance.
 ## Live Demo
 For preview click here:https://ai-travel-plannerr.vercel.app/
+## Project Screenshots
+<img width="1920" height="882" alt="image" src="https://github.com/user-attachments/assets/31dd33d0-bcf6-4898-a731-0f05bfa80168" />
+<img width="1322" height="848" alt="image" src="https://github.com/user-attachments/assets/424d9d64-bb0b-4003-8cd2-df514fcbcc00" />
+<img width="797" height="842" alt="image" src="https://github.com/user-attachments/assets/21bf48c1-051d-41f5-81e8-333f97de2cf9" />
+<img width="1892" height="868" alt="image" src="https://github.com/user-attachments/assets/c966bc6c-0adc-4122-a827-90476aaaca67" />
+
 
 ## Features
 
