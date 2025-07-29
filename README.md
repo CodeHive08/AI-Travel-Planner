@@ -1,6 +1,8 @@
 # AI Travel Planner
 
 A modern AI-powered travel planning application built with Node.js, Express, and EJS. This application helps users create detailed travel plans based on their budget, duration, and destination using AI assistance.
+## Live Demo
+For preview click here:https://ai-travel-plannerr.vercel.app/
 
 ## Features
 
@@ -143,4 +145,3 @@ For support or questions, please open an issue in the repository.
 
 ---
 
-**Note**: This application is completely separate from the main KharchaGuru project and can be run independently.
